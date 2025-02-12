@@ -1,0 +1,201 @@
+/* Updated CSS for responsiveness and layout adjustments */
+
+/* General container styling for the entire flyer */
+.flyer-container {
+  font-family: Arial, sans-serif; /* Sets the font for the entire flyer */
+  text-align: center; /* Centers text content */
+  padding: 20px; /* Adds padding around the flyer */
+  background-color: #f5f5f5; /* Light gray background color */
+}
+
+/* First Row - Divided into Three Sub-Rows */
+.flyer-top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Row 1 - Main Logo & SSLogo */
+.flyer-top-logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+
+.logo-container, .sslogo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 45%;
+}
+
+
+
+
+/* Row 2 - Text Section */
+.flyer-top-text {
+  text-align: center;
+  font-size: clamp(18px, 3vw, 28px); /* Increased font size for PC */
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Second Row - MHD Image */
+.flyer-middle-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.flyer-row img {
+  height: auto;
+  width: 90%;
+  max-width: 800px; /* Enlarged for PC */
+}
+
+/* Row 3 - Buttoned Images (Toggle between Outreach and Peer Support, Info1 and Info2) */
+.flyer-grid {
+  display: grid; /* Uses a grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts columns dynamically */
+  gap: 20px; /* Adds space between grid items */
+  margin: 20px; /* Adds space around the grid */
+}
+
+.flyer-card {
+  background-color: white; /* White card background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensures content fits within the card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+}
+
+.flyer-card img {
+  width: 100%; /* Ensures images fill the card width */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Text Styling for Cards */
+.flyer-card p {
+  padding: 10px; /* Adds space around text inside cards */
+  font-size: 1em; /* Sets default text size */
+}
+
+/* Mobile Layout Adjustments */
+@media (max-width: 768px) {
+  /* Applies only for mobile layout */
+  .flyer-top {
+    flex-direction: column; /* Stacks elements vertically on small screens */
+    align-items: center; /* Centers content */
+  }
+  .flyer-top-left, .flyer-top-right, .flyer-top-center {
+    flex: 1 1 100%; /* Ensures full width for each section */
+    text-align: center; /* Centers text */
+  }
+  .flyer-grid {
+    flex-direction: column; /* Stacks grid items in a column */
+  }
+  .flyer-card {
+    width: 100%; /* Ensures cards take full width */
+  }
+}
+
+/* PC Layout Adjustments */
+@media (min-width: 769px) {
+  /* Applies only for desktop layout */
+  .pc-layout {
+    display: flex; /* Aligns items in a row on larger screens */
+    flex-direction: row; /* Arranges elements horizontally */
+    justify-content: center; /* Centers elements */
+    gap: 20px; /* Adds space between elements */
+  }
+  .flyer-card {
+    width: 45%; /* Ensures equal width for each card */
+  }
+}
+
+/* Button Styling for Image Toggles */
+.toggle-button {
+  display: block; /* Ensures button is a block element */
+  width: 100%; /* Makes the button take full width */
+  padding: 10px; /* Adds padding for better clickability */
+  margin-top: 10px; /* Adds space above the button */
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* Removes default border */
+  border-radius: 5px; /* Rounds button corners */
+  cursor: pointer; /* Shows pointer cursor on hover */
+  text-align: center; /* Centers text inside the button */
+}
+
+.toggle-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+/* Responsive CSS for different layouts */
+@media (max-width: 768px) {
+  .flyer-top-logos, .flyer-top-grnc {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flyer-top-logos img, .flyer-top-grnc img {
+    max-width: 80%;
+  }
+  .flyer-top-text {
+    font-size: 18px; /* Smaller font for mobile */
+  }
+  .flyer-grid {
+    flex-direction: column;
+  }
+  .flyer-card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .pc-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .flyer-top-logos img, .flyer-top-grnc img {
+    max-width: 50%;
+  }
+  .flyer-top-text {
+    font-size: 28px; /* Bigger text on PC */
+  }
+  .flyer-top-grnc img {
+    max-width: 30%; /* Smaller GRNC image on PC */
+  }
+  .flyer-card {
+    width: 45%;
+  }
+}
+
+/* Button Styling */
+.toggle-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
