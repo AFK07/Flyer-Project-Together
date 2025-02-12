@@ -113,7 +113,7 @@ function Flyer() {
 <div className="flyer-row4">
   {/* Left Side - AEC Image */}
   <div className="flyer-left">
-    <img src={aec} alt="AEC Image" className="aec-image" />
+    <img src={aec} alt="AEC logo" className="aec-image" />
   </div>
 
   {/* Middle - QR Code */}
