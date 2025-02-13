@@ -1,69 +1,46 @@
-# Getting Started with Create React App
+Project Title:
+Silent Storms
+link : https://linktr.ee/silentstorms?utm_source=qr_code
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+About Project:
+This flyer was designed to promote Silent Storms, a charitable initiative dedicated to supporting the mental well-being of men aged 18 and above. Given that many participants are over the age of 70, the flyer was carefully crafted with enlarged text and visuals to ensure accessibility and ease of reading. The layout prioritizes clarity, engagement, and responsiveness, making it visually inclusive for all audiences.
 
-## Available Scripts
+Features:
+Responsive Design - Works for both PC and mobile
+Image Flip Animation - Image toggle features
 
-In the project directory, you can run:
+Technologies Used
+Frontend:
+React.js
+HTML/CSS
+Javascript
 
-### `npm start`
+Deployment:
+Github Pages (gh-pages)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Installation & Setup:
+Clone the Repository
+git clone https://github.com/AFK07/Flyer-Project-Together.git 
+cd Flyer-Project-Together
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install Dependencies
+npm install
 
-### `npm test`
+Start the Development Server
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Deploy to GitHub Pages
+npm run deploy
 
-### `npm run build`
+Folder Structure:
+/src
+ ├── /flyer
+ │   ├── flyer.js  # Main React Component
+ │   ├── flyer.css # Styling
+ │   ├── /photo    # Images used in the flyer
+ ├── App.js        # App Entry Point
+ ├── index.js      # React Root
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
 
