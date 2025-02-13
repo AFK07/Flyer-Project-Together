@@ -34,16 +34,6 @@ npm start
 Deploy to GitHub Pages
 npm run deploy
 
-Folder Structure:
-/src
- ├── /flyer
- │   ├── flyer.js  # Main React Component
- │   ├── flyer.css # Styling
- │   ├── /photo    # Images used in the flyer
- ├── App.js        # App Entry Point
- ├── index.js      # React Root
 
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
