@@ -10,7 +10,9 @@ Responsive Design - Works for both PC and mobile
 Image Flip Animation - Image toggle features
 
 Technologies Used
+
 Frontend:
+
 React.js
 HTML/CSS
 Javascript
